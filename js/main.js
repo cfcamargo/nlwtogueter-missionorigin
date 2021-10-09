@@ -21,10 +21,13 @@ for(const link of links){
 
 // mudar o header da pagina quando der scrool
 
-const header = document.querySelector('#header');
-const navHeight = header.offsetHeight;
 
-window.addEventListener('scroll', () => {
+
+
+function changeHeaderShadowOnScroll() {
+    const header = document.querySelector('#header');
+    const navHeight = header.offsetHeight;
+
     if (window.scrollY >= navHeight){
         // scroll e maior q a altura do header
         header.classList.add('scroll')
@@ -33,7 +36,9 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scroll')
 
     }
-});
+}
+
+
 
 /* swipper */
 
@@ -62,5 +67,30 @@ scrollReveal.reveal(`
                     #about .image, #about .text,
                     #services header, #services .card,
                     #testimonials header, #testimonials .testimonials,
-                    #contact .text, #contact .links
-                    `, {interval:100})
+                    #contact .text, #contact .links,
+                    footer .brand, footer .social
+                    `, {interval:100});
+
+
+
+/* back to top */
+
+function backToTop() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY >= 500){
+        // scroll e maior q 500
+        backToTopButton.classList.add('show')
+    } else {
+        // scroll e menor q 500
+        backToTopButton.classList.remove('show')
+
+    }
+}
+
+
+// Ouvindo evento de srcroll
+
+window.addEventListener('scroll', () => {
+    changeHeaderShadowOnScroll()
+    backToTop()
+});
