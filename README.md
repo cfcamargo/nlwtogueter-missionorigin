@@ -9,7 +9,7 @@ Mission Origin - NLW Togueter
 
 - Utilizamos aqui algumas bibliotecas prontas tambem como Swiper para fazer o carrousel de depoimentos, e o ScrollReveal JS para criar o efeito das coisas aparecerem quando rolamos a página
 
-- essas bibliotecas se encontram no links:
+- essas bibliotecas se encontram nos links:
 
 -- https://scrollrevealjs.org/
 -- https://swiperjs.com/
