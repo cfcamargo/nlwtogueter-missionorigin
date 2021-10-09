@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Salon</title>
+    
+    <!-- Biblioteca Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>;
 
     <!-- Stilos -->
     <link rel="stylesheet" href="./css/style.css">
@@ -16,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -106,49 +110,55 @@
         <div class="divider-1"></div>
 
         <section class="section" id="testimonials">
-            <div class="container grid">
+            <div class="container">
                 <header>
                     <h2 class="title">Depoimentos de quem ja passou por aqui</h2>
                 </header>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
-                            </p>
-                            <cite>
-                                <img src="./assets/images/68.jpeg" alt="Foto de Wanessa Souza">
-                                Vanessa Souza
-                            </cite>
-                        </blockquote>
-                    </div>
+                <div class="testimonials swiper">
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
-                            </p>
-                            <cite>
-                                <img src="/assets/images/21.jpeg" alt="Foto de Priscila Escobar">
-                                 Priscila Escobar
-                            </cite>
-                        </blockquote>
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
+                                </p>
+                                <cite>
+                                    <img src="./assets/images/68.jpeg" alt="Foto de Wanessa Souza">
+                                    Vanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
+                                </p>
+                                <cite>
+                                    <img src="/assets/images/21.jpeg" alt="Foto de Priscila Escobar">
+                                     Priscila Escobar
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
+                                </p>
+                                <cite>
+                                    <img src="./assets/images/86.jpeg" alt="Foto de Cristian Camargo">
+                                    Cristian Camargo
+                                </cite>
+                            </blockquote>
+                        </div>
                     </div>
+                    
+                    <div class="swiper-pagination"></div>
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur saepe sequi omnis a praesentium quibusdam temporibus optio excepturi, corrupti cum odit aliquam quidem fugiat accusantium. Repellendus dolorum esse sunt aut.
-                            </p>
-                            <cite>
-                                <img src="./assets/images/86.jpeg" alt="Foto de Cristian Camargo">
-                                Cristian Camargo
-                            </cite>
-                        </blockquote>
-                    </div>
                 </div>
             </div>
         </section>
@@ -158,6 +168,9 @@
        
     </main>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+    <!-- MainJS -->
     <script src="./js/main.js"></script>
 </body>
 </html>
