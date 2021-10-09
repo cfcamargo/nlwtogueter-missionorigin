@@ -556,6 +556,20 @@ footer .social a:hover{
 }
 
 
+/* media queries - responsivo*/
+/*
+extra large devices: 1200 >
+large devices: 1023 >
+large devices : 992>
+medium devices : 767 >
+*/
+@media (min-width: 992px){
+    .title{
+        font-size:2.25rem
+    }
+}
+
+
 
 
 
